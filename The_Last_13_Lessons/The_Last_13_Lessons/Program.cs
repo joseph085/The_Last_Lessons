@@ -14,6 +14,13 @@
 
 
         }
+        public class Task
+        {
+            public string _id;
+            public string _name;
+                    
+
+        }
         public static void Main(string[] args)
         {
             #region 18.Has-a-RelationShip
