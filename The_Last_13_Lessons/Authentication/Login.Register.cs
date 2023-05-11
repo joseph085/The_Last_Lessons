@@ -1,41 +1,21 @@
-﻿namespace Authentication
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Authentication.Commands;
+using Authentication.Database;
+using Authentication.Utilities;
+
+
+namespace Authentication
 {
-    class User
-    {
-        public string _name;
-        public string _lastName;
-        public string _password;
-        public string _email;
-
-        public User(string name, string lastName, string password, string email)
-        {
-            _name = name;
-            _lastName = lastName;
-            _password = password;
-            _email = email;
-        }
-    }
-
-    class LoginCommand
-    {
-        public void Handle()
-        {
-
-        }
-    }
-
-    class RegisterCommand
-    {
-        public void Handle()
-        {
-
-        }
-    }
-
     public class Program
     {
         static void Main(string[] args)
         {
+            DataContext database = new DataContext();
+
             while (true)
             {
                 string command = Console.ReadLine()!; //==> ! isaresini ona gore sona atiriqki eksi olsun diye
@@ -52,7 +32,7 @@
                     case "/exit":
                         Console.WriteLine("Bye-bye");
                         return;
-                  default:
+                    default:
                         Console.WriteLine("Invalid command pls try again :");
                         break;
                 }
@@ -60,4 +40,6 @@
             }
         }
     }
-}
+
+
+}    

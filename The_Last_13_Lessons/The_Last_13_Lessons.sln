@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "The_Last_13_Lessons", "The_Last_13_Lessons\The_Last_13_Lessons.csproj", "{199E1ECF-B0D3-419E-940F-325B294952C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentication\Authentication.csproj", "{E035D35C-5B42-49BA-BE1D-036F7DBA8472}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication1", "Authentication\Authentication1.csproj", "{E035D35C-5B42-49BA-BE1D-036F7DBA8472}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
