@@ -43,7 +43,7 @@ namespace TaskManagement.Database.Repositories.Common
         {
             _entries.Add(entry);
         }
-        public void InsertRange(Predicate<TDomain> entries)
+        public void InsertRange(List<TDomain> entries)
         {
             _entries.AddRange(entries);
         }

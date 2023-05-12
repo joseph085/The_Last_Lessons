@@ -7,6 +7,7 @@ using TaskManagement.Admin.ShowUser;
 using TaskManagement.Admin.UserManagement;
 using TaskManagement.Common;
 using TaskManagement.Database;
+using TaskManagement.Infrastructure;
 
 namespace TaskManagement.Admin
 {
@@ -23,20 +24,16 @@ namespace TaskManagement.Admin
                 switch (command)
                 {
                     case "/show-users":
-                        ShowUsersCommand showUsersCommand = new ShowUsersCommand();
-                        showUsersCommand.Handle();
+                        CommandRouter.Route<ShowUsersCommand>();
                         break;
                     case "/show-user-by-email":
-                        ShowUserByEmailCommand showUserByEmailCommand = new ShowUserByEmailCommand();
-                        showUserByEmailCommand.Handle();
+                        CommandRouter.Route<ShowUserByEmailCommand>();
                         break;
                     case "/show-user-by-id":
-                        ShowUserByIdCommand showUserByIdCommand = new ShowUserByIdCommand();
-                        showUserByIdCommand.Handle();
+                        CommandRouter.Route<ShowUserByIdCommand>();
                         break;
                     case "/add-user":
-                        AddUserCommand addUserCommand = new AddUserCommand();
-                        addUserCommand.Handle();
+                        CommandRouter.Route<AddUserCommand>();
                         break;
                     case "/logout":
                         Console.WriteLine("Bye-bye");
