@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OwnedTaskManagement.Commands
+namespace OwnedTaskManagement.Admin.Commands
 {
-    internal class ShowUserByEmailCommand
+    public class PromoteToAdminCommand
     {
+        public PromoteToAdminCommand() { }
+
     }
 }
